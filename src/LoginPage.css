@@ -1,0 +1,35 @@
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid;
+  font-size: medium;
+  /* font-family: "Times New Roman", Times, serif; */
+}
+h2 {
+  text-align: center;
+  color: rgb(78, 153, 250);
+}
+.LoginForm {
+  width: 30vw;
+  margin: 20vh 33vw;
+  padding: 30px;
+  box-shadow: 0px 4px 8px 3px rgba(44, 108, 180, 0.527),
+    0px 6px 20px 6px rgba(44, 108, 180, 0.267);
+  background-color: aliceblue;
+}
+@media (max-width: 768px) {
+  .LoginForm {
+    width: 60vw;
+    margin: 20% 10%;
+  }
+}
+button {
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  background-color: skyblue;
+}
