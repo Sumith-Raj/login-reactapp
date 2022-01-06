@@ -19,10 +19,10 @@ h2 {
     0px 6px 20px 6px rgba(44, 108, 180, 0.267);
   background-color: aliceblue;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .LoginForm {
     width: 60vw;
-    margin: 20% 10%;
+    margin: 20% 12vw;
   }
 }
 button {

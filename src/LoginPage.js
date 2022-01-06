@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 export function LoginPage() {
   const [inputs, setinputs] = useState({ username: "", password: "" });
-  const [loggedIn, setloggedIn] = useState(false);
+  const navigate = useNavigate();
 
   function handleChanged(e) {
     const { name, value } = e.target;
@@ -11,19 +12,11 @@ export function LoginPage() {
 
   function handleSubmits(e) {
     e.preventDefault();
-    setloggedIn(true);
-    // alert("Hi " + inputs.username);
-  }
-  function handleLogout() {
-    setloggedIn(false);
+    localStorage.setItem("u$ername", inputs.username);
+    navigate("/home");
   }
 
-  return loggedIn ? (
-    <div>
-      <h2>hi {inputs.username}</h2>
-      <button onClick={handleLogout}>logout</button>
-    </div>
-  ) : (
+  return (
     <div className="LoginForm">
       <h2>Login Form</h2>
       <form onSubmit={handleSubmits} autoComplete="off">
