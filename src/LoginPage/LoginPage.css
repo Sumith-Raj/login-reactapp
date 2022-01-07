@@ -25,11 +25,3 @@ h2 {
     margin: 20% 12vw;
   }
 }
-button {
-  right: 0px;
-  top: 0px;
-  position: absolute;
-  padding: 10px;
-  margin: 10px;
-  background-color: skyblue;
-}

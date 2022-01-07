@@ -1,0 +1,13 @@
+.box {
+  width: 28vw;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(44, 108, 180, 0.527),
+    0 6px 20px 0 rgba(44, 108, 180, 0.267);
+
+  margin-bottom: 5vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

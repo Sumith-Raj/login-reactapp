@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { history } from "../History/history";
 import "./LoginPage.css";
+
 export function LoginPage() {
   const [inputs, setinputs] = useState({ username: "", password: "" });
-  const navigate = useNavigate();
 
   function handleChanged(e) {
     const { name, value } = e.target;
@@ -13,7 +13,7 @@ export function LoginPage() {
   function handleSubmits(e) {
     e.preventDefault();
     localStorage.setItem("u$ername", inputs.username);
-    navigate("/home");
+    history.push('/home')
   }
 
   return (
