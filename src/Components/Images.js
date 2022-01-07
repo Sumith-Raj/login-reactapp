@@ -3,22 +3,22 @@ export const Images = () => {
   return (
     <div className='container'>
       <div className="box">
-        <img src='tree.jpg' width='100%' alt='tree' />
+        <img src='taj.webp' width='100%' alt='tree' />
       </div>
       <div className="box">
-        <img src='mountains.jpg' width='100%' alt='tree' />
+        <img src='kovalam.webp' width='100%' alt='tree' />
       </div>
       <div className="box">
-        <img src='boat.jpg' width='100%' alt='tree' />
+        <img src='tree.webp' width='100%' alt='tree' />
       </div>
       <div className="box">
         <img src='pathway.webp' width='100%' alt='tree' />
       </div>
       <div className="box">
-        <img src='nature.jpg' width='100%' alt='tree' />
+        <img src='boat.webp' width='100%' alt='tree' />
       </div>
       <div className="box">
-        <img src='flower.jpg' width='100%' alt='tree' />
+        <img src='flower.webp' width='100%' alt='tree' />
       </div>
     </div>
   )
